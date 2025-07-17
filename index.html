@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CM All Projects - Chandan Majee</title>
+  <title>CM All Projects - Projects by Chandan Majee</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
     body {
@@ -27,10 +27,22 @@
       font-size: 2rem;
     }
 
+    header p {
+      margin: 5px 0 0;
+    }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 20px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: #e60073;
+      border-bottom: 2px solid #e60073;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
 
     .project-card {
@@ -43,13 +55,40 @@
 
     .project-card h2 {
       margin-top: 0;
-      color: #e60073;
+      color: #d1006c;
     }
 
     .project-card a {
       text-decoration: none;
       color: #0077cc;
       font-weight: bold;
+    }
+
+    .social-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .social-section h2 {
+      color: #e60073;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .social-link {
+      display: inline-block;
+      background: #ffe0f0;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #d1006c;
+      font-weight: bold;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .social-link:hover {
+      background: #ffb3d9;
     }
 
     footer {
@@ -66,6 +105,14 @@
       .project-card {
         padding: 15px;
       }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+
+      .social-section h2 {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
@@ -73,34 +120,47 @@
 
   <header>
     <h1>CM All Projects</h1>
-    <p>by Chandan Majee</p>
+    <p>Explore creative tools and mini apps by Chandan Majee</p>
   </header>
 
   <div class="container">
 
-    <div class="project-card">
-    <div class="project-card">
-  <h2>🎁 Birthday Gift Unlock Site</h2>
-  <p>A creative web experience where users who wished me on my birthday can unlock a surprise gift using their Instagram ID. Only approved users can access the gift.</p>
-  <a href="https://gift-by-chandan.netlify.app/" target="_blank">Try This</a>
-</div>
+    <!-- Social Media Section -->
+    <div class="social-section">
+      <h2>📱 My Social Media Accounts</h2>
+      <a class="social-link" href="https://www.instagram.com/chandan__majee?igsh=Y2Rycm1hc3htM2Jm" target="_blank">
+        Instagram
+      </a>
+    </div>
 
-<div class="project-card">
-  <h2>🧠 CM Quiz Game</h2>
-  <p>A fun and challenging quiz game app designed to test your knowledge across various topics.</p>
-  <a href="https://openinapp.link/CMQuizGame" target="_blank">Play Now</a>
-</div>
+    <!-- Websites Section -->
+    <div class="section-title">🌐 Websites</div>
 
-<div class="project-card">
-  <h2>🎉 CM Gift Opener</h2>
-  <p>A simple tool where anyone can enter their name to unlock a birthday gift. Made for fun and open to all!</p>
-  <a href="https://cmgiftopener.netlify.app/" target="_blank">Open Tool</a>
-</div>
+    <div class="project-card">
+      <h2>🎁 Birthday Gift Unlock Site</h2>
+      <p>A creative web experience where users who wished me on my birthday can unlock a surprise gift using their Instagram ID. Only approved users can access the gift.</p>
+      <a href="https://gift-by-chandan.netlify.app/" target="_blank">Try This</a>
+    </div>
+
+    <div class="project-card">
+      <h2>🎉 CM Gift Opener</h2>
+      <p>A creative gift experience for everyone — just enter your name and enjoy a birthday surprise!</p>
+      <a href="https://cmgiftopener.netlify.app/" target="_blank">Open Tool</a>
+    </div>
+
+    <!-- Apps Section -->
+    <div class="section-title">📱 Apps</div>
+
+    <div class="project-card">
+      <h2>🧠 CM Quiz Game</h2>
+      <p>A fun and challenging quiz game app designed to test your knowledge across various topics.</p>
+      <a href="https://openinapp.link/CMQuizGame" target="_blank">Play Now</a>
+    </div>
 
   </div>
 
   <footer>
-    &copy; 2025 Chandan Majee. All rights reserved.
+    &copy; 2025 Chandan Majee | All Projects Publicly Available
   </footer>
 
 </body>
