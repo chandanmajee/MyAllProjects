@@ -132,6 +132,31 @@
       .social-section h2 {  
         font-size: 1.3rem;  
       }  
+      .project-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.section-box {
+  flex: 0 0 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  min-width: 280px;
+}
+      .project-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.project-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
     }
   </style>  
 </head>  
@@ -150,36 +175,34 @@
       </a>  
     </div>  
 
-    <!-- Projects Wrapper -->
-    <div class="section-wrapper">
-      
-      <!-- Websites Section -->  
-      <div class="section-box">
-        <div class="section-title">🌐 Websites</div>  
+    <!-- Container to hold both Website and Apps section side-by-side -->
+<div class="project-wrapper">
+  
+  <!-- Websites Section -->
+  <div class="section-box">
+    <div class="section-title">🌐 Websites</div>
+    <div class="project-card">
+      <h2>🎁 Birthday Gift Unlock Site</h2>
+      <p>A creative web experience where users who wished me on my birthday can unlock a surprise gift using their Instagram ID. Only approved users can access the gift.</p>
+      <a href="https://gift-by-chandan.netlify.app/" target="_blank">Try This</a>
+    </div>
+    <div class="project-card">
+      <h2>🎉 CM Gift Opener</h2>
+      <p>A creative gift experience for everyone — just enter your name and enjoy a birthday surprise!</p>
+      <a href="https://cmgiftopener.netlify.app/" target="_blank">Open Tool</a>
+    </div>
+  </div>
 
-        <div class="project-card">  
-          <h2>🎁 Birthday Gift Unlock Site</h2>  
-          <p>A creative web experience where users who wished me on my birthday can unlock a surprise gift using their Instagram ID. Only approved users can access the gift.</p>  
-          <a href="https://gift-by-chandan.netlify.app/" target="_blank">Try This</a>  
-        </div>  
-
-        <div class="project-card">  
-          <h2>🎉 CM Gift Opener</h2>  
-          <p>A creative gift experience for everyone — just enter your name and enjoy a birthday surprise!</p>  
-          <a href="https://cmgiftopener.netlify.app/" target="_blank">Open Tool</a>  
-        </div>  
-      </div>
-
-      <!-- Apps Section -->  
-      <div class="section-box">
-        <div class="section-title">📱 Apps</div>  
-
-        <div class="project-card">  
-          <h2>🧠 CM Quiz Game</h2>  
-          <p>A fun and challenging quiz game app designed to test your knowledge across various topics.</p>  
-          <a href="https://openinapp.link/CMQuizGame" target="_blank">Play Now</a>  
-        </div>
-      </div>
+  <!-- Apps Section -->
+  <div class="section-box">
+    <div class="section-title">📱 Apps</div>
+    <div class="project-card">
+      <h2>🧠 CM Quiz Game</h2>
+      <p>A fun and challenging quiz game app designed to test your knowledge across various topics.</p>
+      <a href="https://openinapp.link/CMQuizGame" target="_blank">Play Now</a>
+    </div>
+  </div>
+</div>
 
     </div>  
   </div>  
