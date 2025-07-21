@@ -22,155 +22,73 @@
       text-align: center;  
     }  
 
-    header h1 {  
-      margin: 0;  
-      font-size: 2rem;  
-    }  
-
-    header p {  
-      margin: 5px 0 0;  
-    }  
-
     .container {  
       max-width: 1200px;  
       margin: 0 auto;  
       padding: 20px;  
     }  
 
-    .section-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .section-box {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .section-title {  
-      font-size: 1.5rem;  
-      color: #e60073;  
-      border-bottom: 2px solid #e60073;  
-      margin-top: 40px;  
-      margin-bottom: 20px;  
-    }  
-
-    .project-card {  
-      background: #ffe0f0;  
-      padding: 20px;  
-      border-radius: 16px;  
-      margin-bottom: 20px;  
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);  
-    }  
-
-    .project-card h2 {  
-      margin-top: 0;  
-      color: #d1006c;  
-    }  
-
-    .project-card a {  
-      text-decoration: none;  
-      color: #0077cc;  
-      font-weight: bold;  
-    }  
-
     .social-section {  
       text-align: center;  
       margin-bottom: 40px;  
-    }  
-
-    .social-section h2 {  
-      color: #e60073;  
-      font-size: 1.6rem;  
-      margin-bottom: 10px;  
-    }  
+    }
 
     .social-link {  
       display: inline-block;  
       background: #ffe0f0;  
-      padding: 16px 32px; /* increased size */
+      padding: 16px 32px;  
       border-radius: 30px;  
       text-decoration: none;  
       color: #d1006c;  
       font-weight: bold;  
-      font-size: 1.1rem;
+      font-size: 1.1rem;  
       box-shadow: 0 3px 6px rgba(0,0,0,0.1);  
       transition: 0.3s;  
-    }  
+    }
 
     .social-link:hover {  
       background: #ffb3d9;  
-    }  
+    }
+
+    .projects-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project-card {
+      background: #ffe0f0;
+      padding: 20px;
+      border-radius: 16px;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+      color: #d1006c;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
 
     footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #ffebf2;
-  color: #333;
-  font-weight: bold;
-  font-size: 14px;
-  margin-top: 50px;
+      text-align: center;
+      padding: 20px 0;
+      background-color: #ffebf2;
+      color: #333;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 50px;
     }
 
-    @media (max-width: 768px) {
-      .section-wrapper {
-        flex-direction: column;
-      }
-    }
-
-    @media (max-width: 600px) {  
-      header h1 {  
-        font-size: 1.5rem;  
-      }  
-
-      .project-card {  
-        padding: 15px;  
-      }  
-
-      .section-title {  
-        font-size: 1.2rem;  
-      }  
-
-      .social-section h2 {  
-        font-size: 1.3rem;  
-      }  
-      .project-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 10px;
-}
-
-.section-box {
-  flex: 0 0 300px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  min-width: 280px;
-}
-      .project-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.project-wrapper {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
-      @media (min-width: 768px) {
-  .projects-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  .section-box {
-    flex: 1;
-  }
+    @media (max-width: 600px) {
+      .project-card {
+        width: 100%;
       }
     }
   </style>  
@@ -182,7 +100,6 @@
   </header>  
 
   <div class="container">  
-    <!-- Social Media Section -->  
     <div class="social-section">  
       <h2>📱 My Social Media Accounts</h2>  
       <a class="social-link" href="https://www.instagram.com/chandan__majee?igsh=Y2Rycm1hc3htM2Jm" target="_blank">  
@@ -190,39 +107,34 @@
       </a>  
     </div>  
 
-<div class="projects-container">
-<!-- Container to hold both Website and Apps section side-by-side -->
-<div class="project-wrapper">
-  
-  <!-- Websites Section -->
-  <div class="section-box">
-    <div class="section-title">🌐 Websites</div>
-    <div class="project-card">
-      <h2>🎁 Birthday Gift Unlock Site</h2>
-      <p>A creative web experience where users who wished me on my birthday can unlock a surprise gift using their Instagram ID. Only approved users can access the gift.</p>
-      <a href="https://gift-by-chandan.netlify.app/" target="_blank">Try This</a>
-    </div>
-    <div class="project-card">
-      <h2>🎉 CM Gift Opener</h2>
-      <p>A creative gift experience for everyone — just enter your name and enjoy a birthday surprise!</p>
-      <a href="https://cmgiftopener.netlify.app/" target="_blank">Open Tool</a>
+    <div class="projects-row">
+      <div class="project-card">
+        <h2>🎁 Birthday Gift Unlock Site</h2>
+        <p>A web tool where only users who wished me on my birthday can unlock a surprise using Instagram ID.</p>
+        <a href="https://gift-by-chandan.netlify.app/" target="_blank">Try This</a>
+      </div>
+
+      <div class="project-card">
+        <h2>🎉 CM Gift Opener</h2>
+        <p>Enter your name and enjoy a creative birthday surprise gift experience!</p>
+        <a href="https://cmgiftopener.netlify.app/" target="_blank">Open Tool</a>
+      </div>
+
+      <div class="project-card">
+        <h2>🧠 CM Quiz Game</h2>
+        <p>A fun and challenging quiz game app designed to test your knowledge across various topics.</p>
+        <a href="https://openinapp.link/CMQuizGame" target="_blank">Play Now</a>
+      </div>
+      <div class="project-card">
+  <h2>🤖 CM Chat AI</h2>
+  <p>An intelligent AI chatbot just like ChatGPT — ask questions, get instant answers, and chat with your personal assistant anytime. Designed for a smooth and smart conversation experience.</p>
+  <a href="https://openinapp.link/CMChatAi" target="_blank">Chat Now</a>
+      </div>
     </div>
   </div>
 
-  <!-- Apps Section -->
-  <div class="section-box">
-    <div class="section-title">📱 Apps</div>
-    <div class="project-card">
-      <h2>🧠 CM Quiz Game</h2>
-      <p>A fun and challenging quiz game app designed to test your knowledge across various topics.</p>
-      <a href="https://openinapp.link/CMQuizGame" target="_blank">Play Now</a>
-    </div>   
-  </div> <!-- Close .project-wrapper -->
-</div> <!-- Close .projects-container -->
-
-<footer>  
-  &copy; 2025 Chandan Majee | All Projects Publicly Available  
-</footer>  
-
+  <footer>  
+    &copy; 2025 Chandan Majee | All Projects Publicly Available  
+  </footer>  
 </body>  
 </html>
